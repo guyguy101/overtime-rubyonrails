@@ -9,6 +9,8 @@ require 'spec_helper'
 require 'capybara/rails'
 require 'database_cleaner'
 
+include Warden::Test::Helpers
+Warden.test_mode!
 
 
 begin
